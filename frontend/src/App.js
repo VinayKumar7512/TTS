@@ -125,7 +125,7 @@ function App() {
 
         {/* Footer */}
         <div className="footer">
-          <p>Powered by Google TTS API</p>
+          <p>Created by Vinay Kumar | TTS Project 2025</p>
         </div>
       </div>
     </div>
