@@ -8,6 +8,8 @@ function App() {
   const [error, setError] = useState('');
   const audioRef = useRef(null);
 
+  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
   const generateSpeech = async () => {
     if (!text.trim()) {
       setError('Please enter some text');
@@ -19,7 +21,7 @@ function App() {
     setAudioSrc(null);
 
     try {
-      const response = await fetch('http://localhost:5000/api/tts', {
+      const response = await fetch(`${API_URL}/api/tts`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
