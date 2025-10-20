@@ -16,7 +16,6 @@ A full-stack web application that converts text to speech using Google's TTS API
 ### Frontend
 - React 19.1.1
 - Modern CSS with responsive design
-- Audio controls and playback
 
 ### Backend
 - Node.js with Express
